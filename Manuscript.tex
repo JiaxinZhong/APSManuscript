@@ -1,21 +1,6 @@
-
-% \usepackage{graphicx}%
-% \usepackage{multirow}%
-% \usepackage{amsmath,amssymb,amsfonts}%
-% \usepackage{amsthm}%
-% \usepackage{mathrsfs}%
-% \usepackage[title]{appendix}%
-% \usepackage{xcolor}%
-% \usepackage{textcomp}%
-% \usepackage{manyfoot}%
-% \usepackage{booktabs}%
-% \usepackage{algorithm}%
-% \usepackage{algorithmicx}%
-% \usepackage{algpseudocode}%
-% \usepackage{listings}%
-% \usepackage{physics}
-% \usepackage{upgreek}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% - Compile: PDFLaTeX => bibtex => PDFLaTeX => PDFLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[%
  reprint,
 superscriptaddress,
@@ -68,26 +53,26 @@ floatfix,
 
 \title{Full Title Here}
 
-\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
-\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
-\affiliation{Department of Physics, State Key Laboratory of Surface Physics, and Key Laboratory of Micro and Nano Photonic Structures (Ministry of Education), Fudan University, Shanghai, 200438, China}
+\affiliation{Affiliation 1}
+\affiliation{Affiliation 2}
+\affiliation{Affiliation 3}
 
 \author{First LastA}
-\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\affiliation{Affiliation 1}
 \author{First LastB}
-\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\affiliation{Affiliation 1}
 \author{First LastC}
-\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
-\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
+\affiliation{Affiliation 1}
+\affiliation{Affiliation 2}
 \author{First LastD}
 \email{firstlastD@nju.edu.cn}
-\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
+\affiliation{Affiliation 3}
 \author{First LastE}
 \email{firstlaste@fudan.edu.cn}
-\affiliation{Department of Physics, State Key Laboratory of Surface Physics, and Key Laboratory of Micro and Nano Photonic Structures (Ministry of Education), Fudan University, Shanghai, 200438, China}
+\affiliation{Affiliation 2}
 \author{First LastF}
 \email{firstlastf@psu.edu}
-\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\affiliation{Affiliation 1}
 
 \begin{abstract}
 
@@ -160,7 +145,9 @@ F. L. thanks the support of startup funds from Penn State University and NSF awa
 \end{acknowledgments}
 
 
-\bibliography{bibtex}
+% bibtex_jiaxin: Jiaxin's customized bibliography file
+% bibtex: Other bibliography
+\bibliography{bibtex_jiaxin, bibtex}
 
 
 \clearpage 
