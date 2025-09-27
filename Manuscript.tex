@@ -1,0 +1,208 @@
+
+% \usepackage{graphicx}%
+% \usepackage{multirow}%
+% \usepackage{amsmath,amssymb,amsfonts}%
+% \usepackage{amsthm}%
+% \usepackage{mathrsfs}%
+% \usepackage[title]{appendix}%
+% \usepackage{xcolor}%
+% \usepackage{textcomp}%
+% \usepackage{manyfoot}%
+% \usepackage{booktabs}%
+% \usepackage{algorithm}%
+% \usepackage{algorithmicx}%
+% \usepackage{algpseudocode}%
+% \usepackage{listings}%
+% \usepackage{physics}
+% \usepackage{upgreek}
+
+\documentclass[%
+ reprint,
+superscriptaddress,
+% groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+ prl,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+floatfix,
+]{revtex4-2}
+
+\newcommand{\rev}[1]{{\leavevmode\color{red}#1}}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+% minimal working environment. Provide example-image
+\usepackage{mwe} 
+
+\usepackage{upgreek}
+\usepackage{physics}
+\usepackage{braket}
+% Customization
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks,
+    bookmarks,
+	linkcolor={blue!75!black!80!yellow},
+	citecolor={blue!75!black!80!yellow},
+	urlcolor={blue!75!black!80!yellow}
+}
+
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Full Title Here}
+
+\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
+\affiliation{Department of Physics, State Key Laboratory of Surface Physics, and Key Laboratory of Micro and Nano Photonic Structures (Ministry of Education), Fudan University, Shanghai, 200438, China}
+
+\author{First LastA}
+\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\author{First LastB}
+\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\author{First LastC}
+\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
+\author{First LastD}
+\email{firstlastD@nju.edu.cn}
+\affiliation{Key Laboratory of Modern Acoustics and Institute of Acoustics, Nanjing University, Nanjing 210093, China}
+\author{First LastE}
+\email{firstlaste@fudan.edu.cn}
+\affiliation{Department of Physics, State Key Laboratory of Surface Physics, and Key Laboratory of Micro and Nano Photonic Structures (Ministry of Education), Fudan University, Shanghai, 200438, China}
+\author{First LastF}
+\email{firstlastf@psu.edu}
+\affiliation{Graduate Program in Acoustics, The Pennsylvania State University, University Park, PA 16802, USA}
+
+\begin{abstract}
+
+Abstract here. 
+\lipsum[1]
+
+
+
+\end{abstract}
+
+\pdfbookmark[1]{Title}{title} 
+
+\maketitle
+
+% \section{Introduction}
+\emph{Introduction}---Physical systems in the real world are inevitably open in various senses, making non-Hermitian (NH) physics more ubiquitous than its Hermitian counterpart. 
+A hallmark of NH physics is the emergence of complex-valued eigenvalues and non-orthogonal eigenstates, which are absent in Hermitian systems  \cite{Kunst2018BiorthogonalBulkBoundaryCorrespondence, El-Ganainy2018NonHermitianPhysicsPT, Kawabata2019SymmetryTopologyNonHermitian, Ashida2020NonHermitianPhysics, Bergholtz2021ExceptionalTopologyNonHermitian, Ding2022NonHermitianTopologyExceptionalpoint}.
+\lipsum[2]
+
+
+
+\lipsum[3-6]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.49\textwidth]{example-image}
+\caption{
+    (a) Sample 1. 
+    (b) Sample 2
+}
+\label{fig:Green_fun}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\emph{Subtitle 1}---\lipsum[5-6]
+
+
+When $G(\omega)$ acts on the right eigenstate $\ket{\psi_n^\mathrm{R}}$ from the right or on the left eigenstate $\bra{\psi_n^\mathrm{L}}$ from the left, it yields 
+\begin{equation}
+G(\omega) \ket{\psi_n^\mathrm{R}}    
+=  
+\frac{1}{\omega-E_n} 
+ \ket{\psi_n^\mathrm{R}}    
+ \qc 
+ \bra{\psi_n^\mathrm{L}}  G(\omega)
+=  
+\frac{1}{\omega-E_n} 
+ \bra{\psi_n^\mathrm{L}}
+ .
+\label{eq:green_spec}
+\end{equation}
+Equation~(\ref{eq:green_spec}) demonstrates that the left and right eigenstates of $G(\omega)$ are identical to those of $H$, and the eigenvalues of $G(\omega)$ are directly related to the Hamiltonian's eigenvalues $E_n$ by ${1}/({\omega-E_n})$.
+
+\lipsum[8-10]
+
+\emph{Nonreciprocal NH lattices}---\lipsum[11]
+
+
+
+\emph{Discussions and conclusions}---\lipsum[12]
+
+
+
+
+\begin{acknowledgments}
+F. L. thanks the support of startup funds from Penn State University and NSF awards 1234567 and 666666.
+\end{acknowledgments}
+
+
+\bibliography{bibtex}
+
+
+\clearpage 
+\appendix
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End Matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onecolumngrid
+\section*{End Matter}\label{sec:endmatter}
+
+\twocolumngrid
+
+\emph{Appendix A: Title here}---\lipsum[15]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[t!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{example-image-golden}
+    \caption{
+        Caption here.
+    }
+    \label{fig:kaisun:7x7}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\emph{Appendix B: Title here}---\lipsum[16-25]
+
+\clearpage
+
+% \clearpage 
+% 从这里开始修改编号和前缀
+% \setcounter{figure}{0} % 重置编号
+% \renewcommand{\thefigure}{\arabic{figure}}
+% \renewcommand{\figurename}{Extended Data Fig.}
+
+% 强制让超链接系统更新引用目标
+% \makeatletter
+% \renewcommand{\theHfigure}{extended.\thefigure} % 修改内部超链接的标识
+% \makeatother
+
+% \onecolumngrid
+\end{document}
